@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progresive Enhancement Project</title>
     <link rel="stylesheet" type="text/css" href="progressive-enhancement.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="notification">
+        <p>You have a new message!</p>
+    </div>    
+
     <header>
         <h1>The Story of the Chinese Farmer</h1>
         <p>11 may 2016, Alexandre Gorius</p>
-        <img src="images/chinesefarmer.jpg" alt="chinese farmer working on the land">
     </header>
 
-    <article>
-        <!--CAN THIS BE AN ASIDE?-->
+    <img src="images/chinesefarmer.jpg" alt="Chinese Farmer working on the field.">
+
+    <aside class="preamble">
         <h2>Preamble</h2>
         <ol>
             <li>Read this once</li>
             <li>then read it again</li>
             <li>then tell it to your best friend</li>
         </ol>
+    </aside>    
+
+    <article>
 
         <h2>The story</h2>
-        <p>Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his 
-            neighbors came around to commiserate. They said, <br/><q class="villagers">We are so sorry to hear your horse has 
+        <p class="bold">Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his 
+            neighbors came around to commiserate. They said, <br/><br/><q class="villagers">We are so sorry to hear your horse has 
                 run away. This is most unfortunate.</q> The farmer said, <q class="farmer"><em>Maybe.</em></q> The next day the horse came 
             back bringing seven wild horses with it, and in the evening everybody came back and said, 
             <br/><q class="villagers">Oh, isn’t that lucky. What a great turn of events. You now have eight horses!</q> The farmer 
@@ -33,7 +41,7 @@
         </p>
         <p>The following day his son tried to break one of the horses, and while riding it, he was thrown 
             and broke his leg. The neighbors then said, <br/><q class="villagers">Oh dear, that’s too <span class="bad">bad</span>,</q>and the farmer responded, 
-            <q class="farmer"><em>Maybe.</em></q> The next day the <a href="https://en.wikipedia.org/wiki/Conscription" target="_blank" title="What is conscription?">conscription</a> 
+            <q class="farmer"><em>Maybe.</em></q> The next day the <a href="https://en.wikipedia.org/wiki/Conscription" target="_blank" title="What is conscription?">conscription</a> <!--title not working on chrome-->
             officers came around to conscript people into the army, 
             and they rejected his son because he had a broken leg. Again all the neighbors came around and 
             said, <br/><q class="villagers">Isn’t that great!</q> Again, he said, <q class="farmer"><em>Maybe.</em></q>
@@ -44,11 +52,11 @@
             never know what will be the consequence of the misfortune; or, you never know what will be 
             the consequences of <span class="good">good</span> fortune.
             <br/>
-            <a href="https://en.wikipedia.org/wiki/Alan_Watts" title="Who is Alan Watts?">Alan Watts</a>
+            <a class="alan" href="https://en.wikipedia.org/wiki/Alan_Watts" title="Who is Alan Watts?" target="_blank">Alan Watts</a>
         </blockquote>
 
         <figure>
-            <figcaption>Here is this dialog in the form of a table</figcaption>
+            <figcaption>Here is this dialog in the form of a table:</figcaption>
             <table>
                 <thead>
                     <tr>
@@ -79,17 +87,19 @@
             <figcaption>Table representing the farmer's philosophy.</figcaption>
         </figure>
 
-         <!--CAN THIS BE AN ASIDE?-->
-        <h2>Conclusion</h2>
-        <p><span class="good">Good</span> and <span class="bad">Bad</span> are just one perspective. Bananas are <span class="good">good</span> for monkeys, but monkeys are not 
+        
+        <aside>
+            <h2>Conclusion</h2>
+            <p><span class="good">Good</span> and <span class="bad">Bad</span> are just one perspective. Bananas are <span class="good">good</span> for monkeys, but monkeys are not 
             <span class="good">good</span> for bananas. Let's not make a big deal out of it...
         </p>
+        </aside>
 
     </article>
 
     <footer>
         <p>Copyright Just Another Company 2017. All right reserved.</p>
-        <p>Adapted from this <a href="https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/" targer="_blank" title="Origina article.">article.</a></p>
+        <p>Adapted from this <a href="https://wellsbaum.blog/alan-watts-story-of-the-chinese-farmer/" target="_blank" title="Original article">article.</a></p>
     </footer>
 </body>
 </html>

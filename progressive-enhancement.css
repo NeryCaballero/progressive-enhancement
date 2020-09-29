@@ -1,26 +1,101 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+} Si tengo tiempo lo arreglo*/ 
+
 body {
-    background-color: rgb(234, 240, 223);  
-    /* background: -webkit-linear-gradient(-14deg, rgb(255, 255, 255), rgb(216, 243, 206));
-    background: linear-gradient(-14deg, rgb(255, 255, 255), rgb(216, 243, 206)); */
+   /* background-color: rgb(234, 240, 223);  */
+
+    background: -webkit-linear-gradient(-14deg, rgba(77, 104, 31, 0.5), rgb(121, 138, 43));
+    /*background: linear-gradient(-14deg, rgba(77, 104, 31, 0.5), rgb(121, 138, 43)); */
+
     /* background-image: url(images/background.jpg);
-    background-position: bottom right;*/
-    background-color: rgba(237, 237, 237, 0.2);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom right; */
+
+    color: rgb(67, 67, 67);
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    line-height: 2;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
+a {
+    color: rgb(233, 212, 53);
+}
+
+a:hover{
+    font-size: 120%;
+    color: rgb(238, 115, 8);
+}
+
+
+
+a:visited {
+    font-style: italic;
+    color:pink;
+}
+
+/*  A S I D E S  */
+
+
+.notification {
+    background: rgba(120,158, 53,1);
+    padding: 0 3%;
+    border: 3px solid rgba(81,107, 35,1);
+    font-weight: 400;
+    color: antiquewhite;
+    position: fixed;
+    top: 0;
+}
+
+.preamble {
+    margin-bottom: 70px;
+}
+
+
+/*  H E A D E R  */   
+
+header h1 {
+    background-color: rgba(255, 172, 5, 0.9);
+    display: block;
+    margin-top: 110px;
+    margin-bottom: -55px;
+    text-align: center;
+    padding: 20px 0;
+}   
+
+header p {
+
+    text-align: right;
+    color: rgba(50, 50, 50, 0.9);
+    padding: 10px 80px;
+    font-style: italic;
+    font-size: 80%;
+}
+
+/* I M G */
+
+img {
+    max-width: 35%;
+    float: left;
+    margin: 0 50px 20px 0;
+}
+
+/*  Q U O T E S  */
 q {
     background-color: rgba(237, 237, 237, 0.5);
     display: block;
     font-size: 160%;
     font-style: italic;
     max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto;
     padding: 80px 30px;
     
 }
@@ -33,18 +108,12 @@ q.villagers {
     border-left: 3px solid rgb(242, 89, 75);
 }
 
-img {
-    max-width: 100%;
-    }
-
-header h1 {
-    background-color: rgba(255, 253, 181, 0.5);
-}   
-
 .good,
 .bad {
     text-transform: capitalize;
 }
+
+/* GOOD BAD BOLD CLASSES */
 
 .bad {
     color: red;
@@ -54,7 +123,38 @@ header h1 {
     color: green;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+/* H R */
+
+hr { 
+    border: none;
+    height: 160px; 
+    background: url('images/separator.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 0;
+}
+
+/*  B L O C K N O T E  */
+blockquote {
+    margin: 50px 20px;
+}
+
+.alan {
+    font-size: 120%;
+    margin: 20px 90px;
+    display: block;
+    text-align: right;
+}
+
 /* T A B L E */
+
+    figcaption {
+        margin: 30px 0;
+    }
 
     table {
         border-spacing: 0;
@@ -64,17 +164,33 @@ header h1 {
 
     table th,
     table td {
-            border: 1px solid rgb(108, 163, 104);
+            border: 1px solid rgb(176, 199, 135);
             padding: 10px;
         }
 
     table th {
-        width: 100px;
+        width: 100px4
         text-align: left;
-        background-color: rgb(108, 163, 104);
+        background-color: rgba(176, 199, 135, 0.8);
     }
 
     tr:nth-child(even) {
-        background-color: rgba(108, 163, 104, 0.2);
+        background-color: rgba(176, 199, 135, 0.3);
     }
 
+    tbody td:nth-child(2) {
+        text-align: center;
+    }
+
+/*  F O O T E R  */
+
+    footer {
+        margin: 40px 0;
+        font-size: 70%;
+        font-style: italic;
+        text-align: right;
+    }
+
+    /*footer a:visited {
+        color: rgba(100, 246, 248,0.5);
+    } */
